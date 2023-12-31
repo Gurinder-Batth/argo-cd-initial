@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.appName }}-wordpress
+  name: {{ .Values.appName }}-todo
   labels:
-    app: {{ .Values.appName }}-wordpress
+    app: {{ .Values.appName }}-todo
 spec:
   ports:
   - port: 80
