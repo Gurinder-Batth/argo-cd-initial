@@ -20,7 +20,7 @@ spec:
       - name: mycontainer
         image: "{{ .Values.image2.name }}:{{ .Values.image2.tag }}"
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         envFrom:
         - configMapRef:
             name: {{ .Values.configmap.name }}
