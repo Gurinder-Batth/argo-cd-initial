@@ -10,5 +10,5 @@ image:
   tag: 50
 
 image2:
-  name: drupal
+  name: bitnami/drupal-nginx
   tag: latest
