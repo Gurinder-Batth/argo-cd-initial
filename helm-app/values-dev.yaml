@@ -6,8 +6,8 @@ configmap:
     CUSTOM_HEADER: 'This is on the DEV environment!'
 
 image:
-  name: devopsjourney1/mywebapp
-  tag: 50
+  name: wordpress
+  tag: latest
 
 image2:
   name: wordpress
