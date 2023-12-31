@@ -1,5 +1,5 @@
 
-replicas: 5
+replicas: 1
 
 configmap:
   data:
@@ -8,3 +8,7 @@ configmap:
 image:
   name: devopsjourney1/mywebapp
   tag: 50
+
+image2:
+  name: devopsjourney1/mywebapp
+  tag: latest

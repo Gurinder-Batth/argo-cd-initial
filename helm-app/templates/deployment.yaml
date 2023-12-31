@@ -31,3 +31,18 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
+      - name: mycontainer2
+        image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: {{ .Values.configmap.name }}
+        resources:
+          requests:
+            memory: "16Mi" 
+            cpu: "50m"    # 500milliCPUs (1/2 CPU)
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+            

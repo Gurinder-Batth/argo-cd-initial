@@ -10,3 +10,7 @@ configmap:
 image:
   name: devopsjourney1/mywebapp
   tag: latest
+
+image2:
+  name: devopsjourney1/mywebapp
+  tag: latest
