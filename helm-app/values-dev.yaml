@@ -9,6 +9,13 @@ configmap:
 envVariables:
     - name: DRUPAL_DATABASE_PASSWORD
       value: "bitnami"
+    - name: ALLOW_EMPTY_PASSWORD
+      value: "yes"
+    - name: DRUPAL_DATABASE_NAME
+      value: "bitnami_drupal"
+    - name: DRUPAL_DATABASE_HOST
+      value: "mariadb"
+      
 
 image:
   name: devopsjourney1/mywebapp
