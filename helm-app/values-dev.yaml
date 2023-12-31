@@ -1,0 +1,10 @@
+
+replicas: 5
+
+configmap:
+  data:
+    CUSTOM_HEADER: 'This is on the DEV environment!'
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: 50

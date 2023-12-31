@@ -1,0 +1,10 @@
+
+replicas: 4
+
+configmap:
+  data:
+    CUSTOM_HEADER: 'This is on the PROD environment!'
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest
