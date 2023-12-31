@@ -1,0 +1,11 @@
+# values.yaml
+image:
+  repository: devopsjourney1/mywebapp
+  tag: latest
+
+replicaCount: 1
+
+service:
+  name: mywebapp
+  type: LoadBalancer
+  port: 80
