@@ -22,8 +22,8 @@ spec:
         ports:
         - containerPort: 80
         envFrom:
-        env:
-          {{- toYaml .Values.webapp.envVariables | nindent 12 }}
+        - configMapRef:
+            name: {{ .Values.configmap.name }}
         resources:
           requests:
             memory: "500Mi" 
