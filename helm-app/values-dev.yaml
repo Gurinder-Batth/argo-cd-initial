@@ -10,5 +10,5 @@ image:
   tag: 50
 
 image2:
-  name: devopsjourney1/mywebapp
+  name: wordpress
   tag: latest

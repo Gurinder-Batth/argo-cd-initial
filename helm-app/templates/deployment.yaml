@@ -32,7 +32,7 @@ spec:
             memory: "128Mi"
             cpu: "100m"
       - name: mycontainer2
-        image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.image2.name }}:{{ .Values.image2.tag }}"
         ports:
         - containerPort: 8080
         envFrom:
