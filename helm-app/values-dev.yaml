@@ -10,5 +10,5 @@ image:
   tag: 50
 
 image2:
-  name: daptin/todomvc-vuejs
+  name: prologic/todo
   tag: latest
