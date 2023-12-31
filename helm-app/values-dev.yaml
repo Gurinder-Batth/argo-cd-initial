@@ -4,6 +4,11 @@ replicas: 1
 configmap:
   data:
     CUSTOM_HEADER: 'This is on the DEV environment!'
+    DRUPAL_DATABASE_PASSWORD: "bitnami"
+
+envVariables:
+    - name: DRUPAL_DATABASE_PASSWORD
+      value: "bitnami"
 
 image:
   name: devopsjourney1/mywebapp
