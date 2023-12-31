@@ -6,7 +6,8 @@ metadata:
     app: {{ .Values.appName }}-wordpress
 spec:
   ports:
-  - port: 81
+  - port: 80
+    targetPort: 81
     protocol: TCP
     name: flask
   selector:
