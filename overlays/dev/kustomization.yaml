@@ -4,5 +4,10 @@ kind: Kustomization
 bases:
   - ../../base
 
+
+labels:
+  app: mywebapp
+  environment: dev
+  
 patchesStrategicMerge:
   - deployment-patch.yaml
